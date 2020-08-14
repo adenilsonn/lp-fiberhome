@@ -1,4 +1,6 @@
 # ignore everything in the root except the "wp-content" directory.
+/*
+!.gitignore
 !wp-content/
 
 # ignore everything in the "wp-content" directory, except:
@@ -19,5 +21,8 @@ node_modules/
 
 # ignore log files and databases
 *.log
-*.sql
 *.sqlite
+
+#my files
+!html
+!db
