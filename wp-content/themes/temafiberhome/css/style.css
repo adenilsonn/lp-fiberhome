@@ -80,10 +80,6 @@ body {
 a:hover {
     text-decoration: none;
 }
-.align-center {
-    display: flex;
-    align-items: center;
-}
 
 header .top {
     background-color: #000;
@@ -102,16 +98,20 @@ header .navbar {
 header .navbar .navbar-nav {
     width: 100%;
     justify-content: space-around;
+    display: flex;
 }
-header .navbar-dark .navbar-nav .nav-link {
+header .navbar-nav .nav-link {
     color: #fff;
     text-transform: uppercase;
     font-family: 'Avenir LT Std Heavy';
     font-weight: 900;
-    padding: 15px 0;
+    font-size: 18px;
 }
-header .navbar-dark .navbar-nav .active>.nav-link, header .navbar-dark .navbar-nav .nav-link:hover {
+header .navbar-nav .active>.nav-link, header .navbar-nav .nav-link:hover {
     color: var(--color-azul-claro);
+}
+header .navbar-nav .active,header .navbar-nav a:hover {
+    background: none;
 }
 
 main .banner {
@@ -125,6 +125,7 @@ main .banner h2 {
     text-align: right;
     line-height: 43px;
     margin-bottom: 40px;
+    margin-top: 89px;
 }
 main .banner h2 strong {
     font-weight: 900;
@@ -174,7 +175,9 @@ main .banner .align-center {
 main .banner .container {
     position: relative;
 }
-
+main .banner .text {
+    margin-top: 50px;
+}
 main .about {
     color: #fff;
     background-color: var(--color-azul);
@@ -196,7 +199,7 @@ main .about .row {
 main .about .row:before {
     content: '';
     position: absolute;
-    bottom: -78px;
+    bottom: -61px;
     left: 251px;
     background: url(../img/line-lap.png) center center no-repeat;
     width: 662px;
@@ -207,7 +210,7 @@ main .about p {
     text-align: right;
     margin-bottom: 40px;
 }
-main .about .btn {
+main .about .btn-video {
     font-weight: 500;
     color: var(--color-laranja);
     border: 1px solid var(--color-laranja);
@@ -216,9 +219,9 @@ main .about .btn {
     text-transform: uppercase;
     padding: 10px 173px 10px 84px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 40px;
 }
-main .about .btn img {
+main .about .btn-video img {
     position: absolute;
     top: -25px;
     right: 50px;
@@ -244,6 +247,7 @@ main .banner p span {
 
 main .about img.lap {
     margin-left: -95px;
+    position: relative;
 }
 
 main .title {
@@ -270,6 +274,7 @@ main .vision .man {
 main .vision .man img {
     position: absolute;
     bottom: 0;
+    right: 0;
 }
 main .vision .bg {
     position: absolute;
@@ -336,6 +341,186 @@ main .vision .box-list .box:hover .ico:before {
 }
 main .vision .box-list .box:hover img {
     filter: invert(1);
+}
+main .vision .valign-wrapper {
+    height: 600px;
+    position: relative;
+}
+
+
+main .products {
+    height: 645px;
+    background: url(../img/bg-produtos.jpg) no-repeat center center/cover;
+    padding: 65px 0;
+}
+
+main .products .container {
+    position: relative;
+}
+
+main .products .box {
+    border: 1px solid #f2f2f2;
+    border-top: 3px solid #fff;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 13px;
+    display: table;
+    width: 275px;
+    height: auto;
+}
+main .products .carousel {
+    margin-top: 50px;
+}
+main .products .carousel .carousel-item > img {
+    width: auto;
+}
+main .products .box:hover, main .products .box.active {
+    border-top: 3px solid var(--color-laranja);
+}
+main .products .box h2 {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
+
+}
+main .products .box span {
+    font-size: 16px;
+    color: var(--color-azul);
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: 1px solid var(--color-azul);
+    width: 100%;
+    padding: 10px 10px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 300ms ease;
+}
+main .products .box.active span {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navigation {
+    width: 100%;
+}
+.navigation > div {
+    position: absolute;
+    cursor: pointer;
+}
+.navigation .prev {
+    top: 50%;
+    left: 0;
+}
+.navigation .next {
+    top: 50%;
+    right: 0;
+}
+main .support .title-section {
+    background-color: var(--color-laranja);
+    text-align: center;
+    padding: 20px 0;
+}
+main .support .title-section h2 {
+    font-weight: 900;
+    color: var(--color-azul);
+    text-transform: uppercase;
+    font-size: 40px;
+}
+main .support .content {
+    height: 600px;
+    position: relative;
+}
+main .support .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-azul-escuro);
+    top: 0;
+    right: 632px;
+    transform: skewX(-45deg);
+}
+main .support .woman {
+    position: absolute;
+    right: 526px;
+    top: 112px;
+}
+main .support .container {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+main .support ul {
+    margin: 60px 0 0;
+}
+main .support ul li {
+    margin-bottom: 25px;
+}
+main .support ul li a {
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    padding-right: 50px;
+    position: relative;
+}
+main .support ul li a:before {
+    content: '';
+    background: url(../img/arrow-support.png) center center no-repeat;
+    background-size: 100%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0;
+}
+main .faq {
+    min-height: 300px;
+    width: 475px;
+    height: auto !important;
+}
+main .faq .faq-item {
+    border: 1px solid #f2f2f2;
+    border-top: 3px solid var(--color-laranja);
+    background-color: #fff;
+    text-align: center;
+    padding: 10px 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+main .faq .faq-item h2 {
+    font-size: 14px;
+    color: var(--color-laranja);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 10px 0 0;
+}
+main .faq .faq-item h3 {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 15px 0 0;
+}
+main .faq .faq-item p {
+    color: #626060;
+    font-size: 14px;
+    line-height: 20px;
+}
+main .faq .faq-item img {
+    width: 56px;
+}
+.carousel.carousel-slider .carousel-item {
+    min-height: unset;
+}
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 94%;
+    }
 }
 @media (min-width: 2150px) {
     main .banner .logo {
