@@ -61,6 +61,7 @@
 :root {
     --color-azul: #1d3e77;
     --color-azul-escuro: #112445;
+    --color-azul-claro: #00aeef;
     --color-laranja: #e76c23;
 }
 
@@ -76,7 +77,9 @@ body {
     font-weight: 300;
     background: #ededed;
 }
-
+a:hover {
+    text-decoration: none;
+}
 .align-center {
     display: flex;
     align-items: center;
@@ -84,7 +87,7 @@ body {
 
 header .top {
     background-color: #000;
-    border-top: 6px solid #00aeef;
+    border-top: 6px solid var(--color-azul-claro);
     padding: 25px;
     text-align: center;
 }
@@ -108,7 +111,7 @@ header .navbar-dark .navbar-nav .nav-link {
     padding: 15px 0;
 }
 header .navbar-dark .navbar-nav .active>.nav-link, header .navbar-dark .navbar-nav .nav-link:hover {
-    color: #40c8f4;
+    color: var(--color-azul-claro);
 }
 
 main .banner {
@@ -184,7 +187,7 @@ main .about .bg {
     height: 100%;
     background-color: var(--color-azul-escuro);
     top: 0;
-    left: -422px;
+    left: -410px;
     transform: skewX(45deg);
 }
 main .about .row {
@@ -257,7 +260,8 @@ main .title span {
 main .vision {
     height: 600px;
     width: 100%;
-
+    position: relative;
+    overflow: hidden;
 }
 main .vision .man {
     position: relative;
@@ -267,7 +271,72 @@ main .vision .man img {
     position: absolute;
     bottom: 0;
 }
+main .vision .bg {
+    position: absolute;
+    width: 100%;
+    background: #f2f2f2;
+    height: 100%;
+    transform: skewX(-45deg);
+    left: 70%;
+}
+main .vision .box-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border-top: 1px solid #f2f2f2;
+    margin-top: 60px;
+}
+main .vision .box-list .box {
+    border: 1px solid #f2f2f2;
+    border-top: 3px solid #fff;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 13px;
+}
+main .vision .box-list .box:hover {
+    border-top: 3px solid var(--color-laranja);
+}
+main .vision .box-list .box h2 {
+    font-size: 16px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000;
 
+}
+main .vision .box-list .box p {
+    font-size: 14px;
+    color: #626060;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+main .vision .box-list .box .ico {
+    position: relative;
+    margin-bottom: 20px;
+}
+main .vision .box-list .box .ico img {
+    z-index: 1;
+    position: relative;
+}
+main .vision .box-list .box .ico:before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-laranja);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100px;
+    z-index: 0;
+    transition: transform .3s ease-out, background-color 0.3s ease-out, -webkit-filter 0.5s ease-out;
+    transform-origin: left top;
+}
+main .vision .box-list .box:hover .ico:before {
+    transform: scale(1.5) translate(-50%,-50%);
+    background-color: var(--color-azul);
+}
+main .vision .box-list .box:hover img {
+    filter: invert(1);
+}
 @media (min-width: 2150px) {
     main .banner .logo {
         right: unset;
@@ -280,7 +349,22 @@ main .vision .man img {
         right: 75%;
     }
 }
-
+@media (max-width: 1850px) {
+    main .banner .logo {
+        left: -180px;
+    }
+    main .about .bg {
+        left: -591px;
+    }
+}
+@media (max-width: 1500px) {
+    main .banner .logo {
+        left: -259px;
+    }
+    main .about .bg {
+        left: -621px;
+    }
+}
 @media (max-width: 1400px) {
     main .banner .bg-logo {
         right: -140px;

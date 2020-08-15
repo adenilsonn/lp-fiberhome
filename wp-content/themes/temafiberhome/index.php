@@ -50,7 +50,7 @@
         </nav>
     </header>
     <main>
-        <section class="banner" style="background: url('<?php bloginfo('template_url'); ?>/img/bg-slider.jpg') center center / cover no-repeat;">
+        <section class="banner" style="background: url('<?php bloginfo('template_url'); ?>/img/bg-slider.jpg') center center / cover no-repeat; background-attachment: fixed;">
             <div class="logo">
                 <div class="bg"></div>
                 <div class="triangle"></div>
@@ -96,7 +96,8 @@
                 </div>
             </div>
         </section>
-        <div class="vision" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-visao.jpg) right center/cover no-repeat;">
+        <div class="vision" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-visao.jpg) right center/cover no-repeat; background-attachment: fixed;">
+            <div class="bg"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 align-center">
@@ -104,6 +105,36 @@
                             <h2 class="title">
                                 visão <span> do setor</span>
                             </h2>
+                            <div class="box-list">
+                                <a href="#" class="box" target="_blank">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/ico-tendencias.png" width="70" alt="">
+                                    </div>
+                                    <h2>tendências do mercado</h2>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod </p>
+                                </a>
+                                <a href="#" class="box" target="_blank">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/ico-inovacao.png" width="70" alt="">
+                                    </div>
+                                    <h2>tendências do mercado</h2>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod </p>
+                                </a>
+                                <a href="#" class="box" target="_blank">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/ico-padroes.png" width="70" alt="">
+                                    </div>
+                                    <h2>tendências do mercado</h2>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod </p>
+                                </a>
+                                <a href="#" class="box" target="_blank">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/ico-noticias.png" width="70" alt="">
+                                    </div>
+                                    <h2>tendências do mercado</h2>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod </p>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-lg-4 man">
