@@ -33,7 +33,7 @@ add_action( 'admin_menu', 'remove_menus' );
 function my_script() {
     if (!is_admin()) {
         wp_deregister_script('jquery');
-        wp_register_script('jquery', get_bloginfo('template_url').'/vendor/jquery-3.5.1.slim.min.js', false, NULL);
+        wp_register_script('jquery', get_bloginfo('template_url').'/vendor/jquery.min.js', false, NULL);
         wp_enqueue_script('jquery');
     }
 }

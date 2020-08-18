@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDC - Fiberhome</title>
-    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -24,23 +24,23 @@
                 <div class="nav-wrapper">
                     <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="hide-on-med-and-down navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">INSTITUCIONAL</a>
+                        <li class="nav-item">
+                            <a class="nav-link scroll-to-link" href="#institucional">INSTITUCIONAL</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">VISÃO DO SETOR</a>
+                            <a class="nav-link scroll-to-link" href="#visao-do-setor">VISÃO DO SETOR</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">PRODUTOS</a>
+                            <a class="nav-link scroll-to-link" href="#solucoes">SOLUÇÕES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">SERVIÇOS</a>
+                            <a class="nav-link scroll-to-link" href="#servicos">SERVIÇOS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">CONTATO</a>
+                            <a class="nav-link scroll-to-link" href="#as-a-service">As a Service</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">As a Service</a>
+                            <a class="nav-link scroll-to-link" href="#contato">CONTATO</a>
                         </li>
                     </ul>
                 </div>
@@ -48,23 +48,23 @@
         </nav>
 
         <ul class="sidenav" id="mobile-demo">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">INSTITUCIONAL</a>
+            <li class="nav-item">
+                <a class="nav-link scroll-to-link" href="#institucional">INSTITUCIONAL</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">VISÃO DO SETOR</a>
+                <a class="nav-link scroll-to-link" href="#visao-do-setor">VISÃO DO SETOR</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">PRODUTOS</a>
+                <a class="nav-link scroll-to-link" href="#solucoes">SOLUÇÕES</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">SERVIÇOS</a>
+                <a class="nav-link scroll-to-link" href="#servicos">SERVIÇOS</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">CONTATO</a>
+                <a class="nav-link scroll-to-link" href="#as-a-service">As a Service</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">As a Service</a>
+                <a class="nav-link scroll-to-link" href="#contato">CONTATO</a>
             </li>
         </ul>
     </header>
@@ -91,19 +91,12 @@
                     <div class="col xl5">
                         <div class="text">
                             <div role="main" id="formulario-lp-fiberhome-32ff90fa7bef39066f83"></div>
-                            <script type="text/javascript"
-                                src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js">
-                            </script>
-                            <script type="text/javascript">
-                                new RDStationForms('formulario-lp-fiberhome-32ff90fa7bef39066f83', 'UA-32191804-1')
-                                    .createForm();
-                            </script>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="about">
+        <section class="about scroll-to-block" data-id="institucional">
             <div class="bg"></div>
             <div class="container">
                 <div class="row">
@@ -128,7 +121,7 @@
                 </div>
             </div>
         </section>
-        <section class="vision parallax-container">
+        <section class="vision parallax-container scroll-to-block" data-id="visao-do-setor">
             <div class="parallax">
                 <img src="<?php bloginfo('template_url'); ?>/img/bg-visao.jpg" alt="">
             </div>
@@ -182,7 +175,7 @@
                 </div>
             </div>
         </section>
-        <section class="products">
+        <section class="products scroll-to-block" data-id="solucoes">
             <div class="container">
                 <h2 class="title center-align">
                     soluções <span> fiberhome</span>
@@ -370,7 +363,7 @@
                 </div>
             </div>
         </section>
-        <section class="solucoes" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-solucoes.jpg) no-repeat center top/cover">
+        <section class="solucoes scroll-to-block" data-id="servicos" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-solucoes.jpg) no-repeat center top/cover">
             <div class="bg"></div>
             <div class="container">
                 <div class="row">
@@ -390,7 +383,7 @@
                 </div>
             </div>
         </section>
-        <section class="wdc" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-wdc.jpg) no-repeat center top/cover">
+        <section class="wdc scroll-to-block" data-id="as-a-service" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-wdc.jpg) no-repeat center top/cover">
             <div class="container">
                 <div class="row">
                     <div class="col xl7 valign-wrapper">
@@ -417,7 +410,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact">
+        <section class="contact scroll-to-block" data-id="contato">
             <div class="container">
                 <div class="row">
                     <div class="col xl3">
@@ -443,6 +436,7 @@
                         </div>
                     </div>
                     <div class="col xl5">
+                        <div role="main" id="formulario-lp-fiberhome-2-5ed0e2219684ad2119b2"></div>
                     </div>
                 </div>
             </div>
@@ -457,6 +451,7 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://d335luupugsy2.cloudfront.net/js/rdstation-forms/stable/rdstation-forms.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/owl.carousel.min.js"></script>
     <script>
@@ -510,7 +505,46 @@
                 modalOverlay.classList.remove('active')
                 modalOverlay.querySelector('iframe').src = ''
             })
+
+
         });
+
+        function gotoScroll() {
+            var hash = window.location.hash.replace("#", "")
+            if(hash) {
+                $('body, html').animate({'scrollTop':$('.scroll-to-block[data-id="'+hash+'"]').offset().top - 63}, 500)
+            }
+        }gotoScroll()
+
+        $('.scroll-to-link').on('click', function(){
+            console.log('click')
+            var index = $(this).attr('href').substr(1)
+            $('body, html').animate({'scrollTop':$('.scroll-to-block[data-id="'+index+'"]').offset().top -63}, 500)
+            return false
+        });
+
+
+        let documentScroll
+        const header = $('header')
+
+        window.onscroll = () => {
+            documentScroll = $(document).scrollTop()
+            menushow()
+        }
+
+        // Anima Menu
+        const menushow = () => {
+            if( documentScroll > 163 ) {
+                header.addClass('fixed')
+            } else {
+                header.removeClass('fixed')
+            }
+        }
+        menushow()
+
+        new RDStationForms('formulario-lp-fiberhome-2-5ed0e2219684ad2119b2', 'UA-32191804-1').createForm()
+        new RDStationForms('formulario-lp-fiberhome-32ff90fa7bef39066f83', 'UA-32191804-1').createForm()
+
     </script>
     <?php wp_footer(); ?>
 </body>

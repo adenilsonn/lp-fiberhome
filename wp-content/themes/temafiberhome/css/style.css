@@ -107,7 +107,14 @@ header .top p {
     margin-bottom: 0;
 }
 header .navbar {
+    top: 162px;
+    position: absolute;
     background-color: var(--color-azul);
+    z-index: 100;
+}
+header.fixed .navbar{
+    top: 0;
+    position: fixed;
 }
 header .navbar .navbar-nav {
     width: 100%;
@@ -129,6 +136,7 @@ header .navbar-nav .active,header .navbar-nav a:hover {
 }
 
 main .banner {
+    margin-top: 63px;
     height: 580px;
     position: relative;
 }
@@ -197,6 +205,7 @@ main .about {
     background-color: var(--color-azul);
     padding: 100px 0 120px;
     position: relative;
+    overflow: hidden;
 }
 main .about .bg {
     position: absolute;
@@ -322,6 +331,8 @@ main .vision .box-list .box h2 {
     font-weight: 900;
     text-transform: uppercase;
     color: #000;
+    min-height: 34px;
+    margin-bottom: 0;
 }
 main .vision .box-list .box p {
     font-size: 14px;
@@ -398,6 +409,7 @@ main .products .box h2 {
     font-weight: 900;
     text-transform: uppercase;
     color: #000;
+    margin-top: 0;
 
 }
 main .products .box span {
@@ -432,6 +444,9 @@ main .products .box.active span {
 .navigation .next {
     top: 50%;
     right: 0;
+}
+main .support {
+    overflow: hidden;
 }
 main .support .title-section {
     background-color: var(--color-laranja);
@@ -599,6 +614,9 @@ main .vision.videos .box-list .box {
 main .vision.videos .box-list .box .ico {
     text-align: center;
 }
+main .vision.videos .man img {
+    bottom: 53px;
+}
 main .vision.videos .box-list .box .ico img {
     width: 40px;
     margin: 7px auto 0;
@@ -659,6 +677,13 @@ main .vision.videos .title {
     margin-top: 30px;
 }
 
+.owl-carousel .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.owl-carousel .owl-item {
+    display: flex;
+}
 
 main .solucoes {
     height: 800px;
@@ -709,6 +734,7 @@ main .wdc {
     position: relative;
     height: 800px;
     border-top: 5px solid var(--color-azul-claro);
+    overflow: hidden;
 }
 
 main .wdc h2 {
@@ -835,7 +861,7 @@ main .contact .infos .whatsapp {
     left: 0;
     opacity: 0;
     visibility: hidden;
-    z-index: 10;
+    z-index: 101;
 }
 .modal-video.active {
     opacity: 1;
@@ -846,7 +872,7 @@ main .contact .infos .whatsapp {
     background-color: #fff;
     width: 90%;
     height: 90%;
-    margin: 5vh auto;
+    margin: 0 auto;
     position: relative;
     max-width: 1000px;
     max-height: 579px;
@@ -868,6 +894,21 @@ iframe {
     position: absolute;
     top: 5%;
     left: 3%;
+}
+div#formulario-lp-fiberhome-2-5ed0e2219684ad2119b2 #rdstation-bricks-embeddable-form-bricks-component-JxExJH2bVQwls9Qfkzfamw p span {
+    color: #fff !important;
+}
+
+.sidenav {
+    background-color: var(--color-azul);
+    padding-top: 16px;
+}
+nav a.sidenav-trigger i {
+    font-size: 34px;
+}
+.sidenav li>a {
+    text-transform: uppercase;
+    color: #fff;
 }
 
 @media only screen and (min-width: 993px) {
@@ -897,7 +938,7 @@ iframe {
 }
 @media (max-width: 1500px) {
     main .banner .logo {
-        left: -259px;
+        left: -320px;
     }
     main .about .bg {
         left: -621px;
@@ -906,5 +947,233 @@ iframe {
 @media (max-width: 1400px) {
     main .banner .bg-logo {
         right: -140px;
+    }
+}
+@media (max-width: 1200px) {
+    main .banner {
+        height: auto;
+        padding-bottom: 27px;
+    }
+    main .banner .logo .triangle {
+        display: none;
+    }
+    main .banner .logo .bg {
+        display: none;
+    }
+    main .banner .logo {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    main .banner .logo img {
+        position: relative;
+        top: 0;
+        right: unset;
+    }
+    main .banner .logo {
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 1;
+        left: unset;
+        text-align: center;
+        background: #fff;
+        padding: 19px 0 15px;
+    }
+    main .banner p {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    main .banner h2 {
+        text-align: center;
+        margin: 0 0 20px;
+    }
+    main .banner .parallax-container .parallax {
+        top: 118px;
+    }
+    #formulario-lp-fiberhome-32ff90fa7bef39066f83 {
+        text-align: left;
+        max-width: 500px;
+        margin: 0 auto;
+        min-height: 484px;
+    }
+    main .about {
+        padding: 50px 0 50px;
+    }
+    main .about p {
+        text-align: center;
+    }
+    main .about .btn-video {
+        float: none;
+        margin: 71px auto 0;
+        display: table;
+    }
+    .row .col {
+        width: 100%;
+    }
+    main .about img.lap {
+        margin: 0 auto;
+        display: block;
+    }
+    main .about .row:before {
+        display: none;
+    }
+    main .vision {
+        height: auto;
+        padding: 50px 0;
+    }
+    main .vision .man {
+        display: none;
+    }
+    main .vision .valign-wrapper {
+        text-align: center;
+        height: auto;
+    }
+    main .vision.videos {
+        padding: 50px 0 94px;
+    }
+    main .title {
+        margin-top: 0;
+    }
+    main .vision.videos .box-list {
+        margin: 60px auto 0;
+    }
+    main .wdc .valign-wrapper {
+        height: auto;
+    }
+    main .wdc .vantagens div br {
+        display: none;
+    }
+    main .wdc .vantagens div {
+        margin: 0;
+    }
+    main .wdc {
+        height: auto;
+        padding: 50px 0;
+    }
+    main .contact {
+        text-align: center;
+    }
+    main .contact .infos .buttons a {
+        margin: 0 auto;
+    }
+    #formulario-lp-fiberhome-2-5ed0e2219684ad2119b2 {
+        text-align: left;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    main .about .btn-video img {
+        border:none;
+    }
+    main .contact h2 {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1150px) {
+    main .support .woman {
+        display: none;
+    }
+
+    main .support .bg {
+        position: absolute;
+        width: 200%;
+        height: 100%;
+        background-color: var(--color-azul-escuro);
+        top: 0;
+        right: 153px;
+        transform: skewX(-45deg);
+    }
+    main .support .content {
+        height: auto;
+        min-height: 500px;
+    }
+    main .solucoes .bg {
+        transform: skewX(0);
+        left: 0;
+    }
+    main .solucoes {
+        height: auto;
+        text-align: center;
+        padding: 50px 0 20px;
+    }
+    main .solucoes h2 {
+        margin-top: 0;
+    }
+    main .solucoes ul {
+        margin: 0 auto;
+        float: none;
+    }
+}
+
+@media (max-width: 760px) {
+    body {
+        font-size: 16px;
+    }
+    main .banner {
+        margin-top: 54px;
+    }
+    main .about img.lap {
+        max-width: 100%;
+    }
+    main .about .btn-video {
+        padding: 9px;
+        width: 100%;
+        text-align: center;
+        padding-top: 6px;
+    }
+    main .about .btn-video img {
+        top: unset;
+        right: unset;
+        max-width: 35px;
+        position: relative;
+        vertical-align: bottom;
+        margin-left: 13px;
+    }
+    main .vision .box-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    main .wdc .vantagens a {
+        margin-left: 0;
+        width: 100%;
+        max-width: none;
+    }
+    main .support .content {
+        padding-bottom: 50px;
+    }
+    main .support .bg {
+        transform: skewX(0);
+        width: 100%;
+        right: 0;
+    }
+    main .support ul {
+        margin-top: 50px;
+    }
+    main .support .content {
+        min-height: unset;
+    }
+    main .wdc h2 {
+        font-size: 30px;
+        margin-top: 0;
+    }
+    main .solucoes h2 {
+        margin-top: 0;
+        font-size: 32px;
+    }
+    main .banner h2 {
+        margin-top: 50px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+    main .banner .text {
+        margin-top: 0;
+    }
+}
+@media (max-width: 350px) {
+
+
+    main .vision .box-list {
+        grid-template-columns: 1fr;
     }
 }
