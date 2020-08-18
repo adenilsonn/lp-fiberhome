@@ -122,7 +122,7 @@
                             maiores detentoras de patentes nessa área, caracterizando-se por uma
                             empresa inovadora que assume a missão de "maximizar o valor da
                             conexão digital e beneficiar a sociedade humana".</p>
-                        <a href="#" class="btn-video">Veja o Vídeo <img
+                        <a id="JZ-UpvvG_II" class="btn-video modal-button">Veja o Vídeo <img
                                 src="<?php bloginfo('template_url'); ?>/img/bt-play.png" width="93" alt=""></a>
                     </div>
                 </div>
@@ -141,7 +141,7 @@
                                 visão <span> do setor</span>
                             </h2>
                             <div class="box-list">
-                                <a href="#" class="box" target="_blank">
+                                <a href="http://www.fiberhome.com/insights/3.aspx" class="box" target="_blank">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/ico-tendencias.png" width="70"
                                             alt="">
@@ -149,28 +149,28 @@
                                     <h2>tendências do mercado</h2>
                                     <p>Consectetur adipiscing elit, sed do eiusmod </p>
                                 </a>
-                                <a href="#" class="box" target="_blank">
+                                <a href="http://www.fiberhome.com/insights/4/3586.aspx" class="box" target="_blank">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/ico-inovacao.png" width="70"
                                             alt="">
                                     </div>
-                                    <h2>tendências do mercado</h2>
+                                    <h2>inovação</h2>
                                     <p>Consectetur adipiscing elit, sed do eiusmod </p>
                                 </a>
-                                <a href="#" class="box" target="_blank">
+                                <a href="http://www.fiberhome.com/insights/6.aspx" class="box" target="_blank">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/ico-padroes.png" width="70"
                                             alt="">
                                     </div>
-                                    <h2>tendências do mercado</h2>
+                                    <h2>padrões de contribuição</h2>
                                     <p>Consectetur adipiscing elit, sed do eiusmod </p>
                                 </a>
-                                <a href="#" class="box" target="_blank">
+                                <a href="http://www.fiberhome.com/news/Default.aspx" class="box" target="_blank">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/ico-noticias.png" width="70"
                                             alt="">
                                     </div>
-                                    <h2>tendências do mercado</h2>
+                                    <h2>Notícias</h2>
                                     <p>Consectetur adipiscing elit, sed do eiusmod </p>
                                 </a>
                             </div>
@@ -188,29 +188,24 @@
                     soluções <span> fiberhome</span>
                 </h2>
                 <div class="carousel">
-                    <a class="carousel-item box" href="#">
-                        <img src="<?php bloginfo('template_url'); ?>/img/produto.jpg">
+                    <a class="carousel-item box" href="https://wdcnet.com.br/produtos/?_sft_familia-de-produto=cabos-de-fibra-optica-redes-de-distribuicao-optica-odn&_sft_fabricantes=distribuidora-fiberhome">
+                        <img src="<?php bloginfo('template_url'); ?>/img/cabos.jpg">
                         <h2>Cabos de fibra ótica</h2>
                         <span>Saiba mais</span>
                     </a>
-                    <a class="carousel-item box" href="#">
-                        <img src="<?php bloginfo('template_url'); ?>/img/produto.jpg">
-                        <h2>Cabos de fibra ótica</h2>
+                    <a class="carousel-item box" href="https://wdcnet.com.br/produtos/?_sft_familia-de-produto=olt&_sft_fabricantes=distribuidora-fiberhome">
+                        <img src="<?php bloginfo('template_url'); ?>/img/olt.png">
+                        <h2>OLT</h2>
                         <span>Saiba mais</span>
                     </a>
-                    <a class="carousel-item box" href="#">
-                        <img src="<?php bloginfo('template_url'); ?>/img/produto.jpg">
-                        <h2>Cabos de fibra ótica</h2>
+                    <a class="carousel-item box" href="https://wdcnet.com.br/produtos/?_sft_familia-de-produto=onu&_sft_fabricantes=distribuidora-fiberhome">
+                        <img src="<?php bloginfo('template_url'); ?>/img/onu.jpg">
+                        <h2>ONU</h2>
                         <span>Saiba mais</span>
                     </a>
-                    <a class="carousel-item box" href="#">
-                        <img src="<?php bloginfo('template_url'); ?>/img/produto.jpg">
-                        <h2>Cabos de fibra ótica</h2>
-                        <span>Saiba mais</span>
-                    </a>
-                    <a class="carousel-item box" href="#">
-                        <img src="<?php bloginfo('template_url'); ?>/img/produto.jpg">
-                        <h2>Cabos de fibra ótica</h2>
+                    <a class="carousel-item box" href="https://wdcnet.com.br/produtos/?_sft_familia-de-produto=switch&_sft_fabricantes=distribuidora-fiberhome">
+                        <img src="<?php bloginfo('template_url'); ?>/img/switches.png">
+                        <h2>SWITCH</h2>
                         <span>Saiba mais</span>
                     </a>
                 </div>
@@ -262,7 +257,7 @@
                                         <div class="collapsible-body">Classe de Gbics:<br>
                                             B+ 3 a 5db - ONU opera em até -28dbm<br>
                                             C+ 3 a 7db - ONU opera em até -30dbm
-                                            <a href="http://">Veja o vídeo</a>
+                                            <a id="B-ptnIXM-PU" class="modal-button">Veja o vídeo</a>
                                         </div>
                                     </li>
                                     <li>
@@ -322,7 +317,7 @@
                                         <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
                                             alt="">
                                     </div>
-                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                    <h2>A plataforma de treinamentos da WDC feita para você!</h2>
                                 </a>
                                 <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
                                     <div class="ico">
@@ -331,33 +326,40 @@
                                     </div>
                                     <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
                                 </a>
-                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                <a id="t0ekl8q0-uY" class="carousel-item box modal-button">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
                                             alt="">
                                     </div>
-                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                    <h2>Conheça a FiberHome e a parceria com a WDC!</h2>
                                 </a>
-                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                <a id="4dVjYLso8qQ" class="carousel-item box modal-button">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
                                             alt="">
                                     </div>
-                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                    <h2>Linha de ONUs da FiberHome e a novidade de 2019!</h2>
                                 </a>
-                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                <a id="AyG7iR8MVmg" class="carousel-item box modal-button">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
                                             alt="">
                                     </div>
-                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                    <h2>FiberHome e WDC tirando as dúvidas dos Provedores</h2>
                                 </a>
-                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                <a id="7wTixubsLTc" class="carousel-item box modal-button">
                                     <div class="ico">
                                         <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
                                             alt="">
                                     </div>
-                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                    <h2>Fiberhome DWDM - Fonst 1000 na WDC Networks</h2>
+                                </a>
+                                <a id="_X1dolVljyc" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>Conheça o Kit Assinante Fiberhome - Novidade exclusiva</h2>
                                 </a>
                             </div>
                         </div>
@@ -421,11 +423,26 @@
                     <div class="col xl3">
                         <img width="126" src="<?php bloginfo('template_url'); ?>/img/wdc-v.png" alt="WDC Networks">
                     </div>
-                    <div class="col xl3">
-
+                    <div class="col xl4">
+                        <h2>CONTATO</h2>
+                        <div class="infos">
+                            <strong>FIBERHOME</strong><br>
+                            Telefone: <span>11</span> <strong>3046-9333</strong><br>
+                            Email: <a href="mailto:support.brazil@fiberhome.com" target="_blank" rel="noopener noreferrer"><strong>support.brazil@fiberhome.com</strong></a>
+                        </div>
+                        <div class="infos">
+                            <strong>WDC</strong><br>
+                            Telefone: <span>11</span> <a href="https://api.whatsapp.com/send?phone=551130353777" target="_blank" rel="noopener noreferrer"><strong class="whatsapp">3035.3777 <img src="<?php bloginfo('template_url'); ?>/img/ico-whatsapp.png" width="25" alt="WhatsApp"></strong></a><br>
+                            Email: <a href="mailto:contato@wdcnet.com.br" target="_blank" rel="noopener noreferrer"><strong>contato@wdcnet.com.br</strong></a>
+                        </div>
+                        <div class="infos">
+                            <div class="buttons">
+                                <a href="https://wdcnet.com.br/atendimento/fale-conosco/" target="_blank" rel="noopener noreferrer"><strong>mais informaçÕes</strong></a>
+                                <a href="https://wdcnet.com.br/atendimento/sac-atendimento-pos-venda/" target="_blank" rel="noopener noreferrer"><strong>SAC (PÓS-VENDA)</strong></a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col xl6">
-
+                    <div class="col xl5">
                     </div>
                 </div>
             </div>

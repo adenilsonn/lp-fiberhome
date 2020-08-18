@@ -87,6 +87,10 @@ strong {
     font-weight: 900;
 }
 
+h2 {
+    font-size: 40px;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -318,7 +322,6 @@ main .vision .box-list .box h2 {
     font-weight: 900;
     text-transform: uppercase;
     color: #000;
-
 }
 main .vision .box-list .box p {
     font-size: 14px;
@@ -499,6 +502,15 @@ main .support ul.faqc {
 main .support ul.faqc li .collapsible-header {
     font-size: 15px;
 }
+main .support ul.faqc a {
+    border: 1px solid var(--color-azul-claro);
+    border-radius: 5px;
+    display: table;
+    margin-top: 10px;
+    padding: 8px 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
 main .support ul li .collapsible-header:before {
     content: '';
     background: url(../img/arrow-support.png) center center no-repeat;
@@ -601,6 +613,10 @@ main .vision.videos .box-list .box:hover .ico:before {
     transform: scale(1.4) translate(-50%,-50%);
     background-color: var(--color-azul);
 }
+main .vision.videos .box-list .box h2 {
+    font-size: 14px;
+    min-height: 46px;
+}
 .carousel.carousel-slider .carousel-item {
     min-height: unset;
 }
@@ -614,7 +630,15 @@ main .vision.videos .box-list {
     display: block;
     grid-template-columns: none;
     border-top: none;
-    max-width: 750px;
+    max-width: 800px;
+}
+
+.modal-button {
+    cursor: pointer;
+}
+
+main .vision.videos .title {
+    margin-top: 0;
 }
 
 .owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-prev:hover {
@@ -760,9 +784,44 @@ main .wdc .vantagens a:hover {
 
 
 main .contact {
-    padding: 110px 0;
+    padding: 110px 0 40px;
     background-color: #000;
     border-top: 5px solid var(--color-azul-claro);
+}
+
+main .contact .infos {
+    color: #fff;
+    margin-bottom: 40px;
+}
+main .contact .infos a {
+    color: #fff;
+}
+main .contact .infos span{
+    font-size: 14px;
+}
+main .contact .infos .buttons a {
+    text-transform: uppercase;
+    display: table;
+    position: relative;
+    padding-right: 27px;
+}
+main .contact .infos .buttons a:after {
+    content: '';
+    width: 21px;
+    height: 21px;
+    background: url(../img/ico-infos.png) center center no-repeat;
+    background-size: 100%;
+    right: 0;
+    position: absolute;
+    top: 4px;
+}
+main .contact h2 {
+    color: #fff;
+    font-weight: 900;
+    margin: 0 0 35px;
+}
+main .contact .infos .whatsapp {
+    color: var(--color-azul-claro);
 }
 
 /* Modal */
