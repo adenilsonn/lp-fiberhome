@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDC - Fiberhome</title>
-    <?php /*<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">*/ ?>
+    <!-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> -->
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
     <?php wp_head(); ?>
@@ -234,57 +236,263 @@
                 <div class="container">
                     <div class="row">
                         <div class="col xl7">
-                            <ul>
-                                <li><a href="http://">Suporte Gratuito  </a></li>
-                                <li><a href="http://">Suporte VIP  </a></li>
-                            </ul>
-                            <div class="faq carousel carousel-slider center">
-                                <div class="carousel-item faq-item">
+                            <div>
+                                <ul class="collapsible">
+                                    <li>
+                                        <div class="collapsible-header">Suporte Gratuito</div>
+                                        <div class="collapsible-body">Segunda a sexta das 9h as 18h por e-mail ou telefone 5x8.</div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">Suporte VIP</div>
+                                        <div class="collapsible-body">- Atendimento 24*7 <br>
+    - Network Checking incluindo Plano de Ação para Atualização, Correção de falha e Melhorias na rede. <br>
+    - Assistência em processos de Teste e Homologação de Novas ONUs e OLTs Fiberhome. <br>
+    - Definição de Escalation entre Ambas as Partes (Fiberhome e cliente) <br>
+    - Relatório Mensal das atividades executadas e crescimento da rede. <br>
+    - Acesso as MIBs e OIDs</div>
+                                    </li>
+                                </ul>
+                                <div class="title-faq">
                                     <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
                                     <h2>Dúvidas frequentes</h2>
-                                    <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
-                                    <p>Classe de Gbics:<br>
-            B+ 3 a 5db - ONU opera em até -28dbm<br>
-            C+ 3 a 7db - ONU opera em até -30dbm</p>
                                 </div>
-                                <div class="carousel-item faq-item">
-                                    <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
-                                    <h2>Dúvidas frequentes</h2>
-                                    <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
-                                    <p>Classe de Gbics:<br>
-            B+ 3 a 5db - ONU opera em até -28dbm<br>
-            C+ 3 a 7db - ONU opera em até -30dbm</p>
-                                </div>
-                                <div class="carousel-item faq-item">
-                                    <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
-                                    <h2>Dúvidas frequentes</h2>
-                                    <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
-                                    <p>Classe de Gbics:<br>
-            B+ 3 a 5db - ONU opera em até -28dbm<br>
-            C+ 3 a 7db - ONU opera em até -30dbm</p>
-                                </div>
+                                <ul class="collapsible faqc">
+                                    <li>
+                                        <div class="collapsible-header">1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</div>
+                                        <div class="collapsible-body">Classe de Gbics:<br>
+                                            B+ 3 a 5db - ONU opera em até -28dbm<br>
+                                            C+ 3 a 7db - ONU opera em até -30dbm
+                                            <a href="http://">Veja o vídeo</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="collapsible-header">2) Pre requisito de Hardware e Software para instalacao do ambiente do UNM2000</div>
+                                        <div class="collapsible-body">
+                                            <a href="https://drive.google.com/file/d/1xIuyPkXg3RlJX6gmIDqTHQSyQ-5zfVey/view?usp=sharing" target="_blank" rel="noopener noreferrer">Requisitos</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <?php /*<div class="faq carousel carousel-slider center">
+                                    <div class="carousel-item faq-item">
+                                        <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
+                                        <h2>Dúvidas frequentes</h2>
+                                        <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
+                                        <p>Classe de Gbics:<br>
+                B+ 3 a 5db - ONU opera em até -28dbm<br>
+                C+ 3 a 7db - ONU opera em até -30dbm</p>
+                                    </div>
+                                    <div class="carousel-item faq-item">
+                                        <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
+                                        <h2>Dúvidas frequentes</h2>
+                                        <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
+                                        <p>Classe de Gbics:<br>
+                B+ 3 a 5db - ONU opera em até -28dbm<br>
+                C+ 3 a 7db - ONU opera em até -30dbm</p>
+                                    </div>
+                                    <div class="carousel-item faq-item">
+                                        <img width="56" src="<?php bloginfo('template_url'); ?>/img/ico-faq.png" alt="">
+                                        <h2>Dúvidas frequentes</h2>
+                                        <h3>1) Qual a diferença da potência de luz GBIC classe ( B+ / C+ )</h3>
+                                        <p>Classe de Gbics:<br>
+                B+ 3 a 5db - ONU opera em até -28dbm<br>
+                C+ 3 a 7db - ONU opera em até -30dbm</p>
+                                    </div>
+                                </div>*/ ?>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section class="vision videos parallax-container">
+            <div class="parallax">
+                <img src="<?php bloginfo('template_url'); ?>/img/bg-videos.jpg" alt="">
+            </div>
+            <div class="bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col xl8 valign-wrapper">
+                        <div>
+                            <h2 class="title">
+                            <span><strong>+</strong></span>vídeos <span> fiberhome</span>
+                            </h2>
+                            <div class="box-list owl-carousel owl-theme">
+                                <a id="LZvK_UtwLLU" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                                <a id="lQO1u9KE6TA" class="carousel-item box modal-button">
+                                    <div class="ico">
+                                        <img src="<?php bloginfo('template_url'); ?>/img/play-youtube.png" width="40"
+                                            alt="">
+                                    </div>
+                                    <h2>CONHEÇA TUDO SOBRE O UNM2000</h2>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col xl4 man">
+                        <img src="<?php bloginfo('template_url'); ?>/img/laptop1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="solucoes" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-solucoes.jpg) no-repeat center top/cover">
+            <div class="bg"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col xl6 offset-xl6">
+                        <h2> <strong> SOLUÇÃO</strong> DE PONTA A PONTA <span>FIBERHOME</span></h2>
+                        <ul>
+                            <li>Equipamentos robustos para missão crítica</li>
+                            <li>Suporte local especializado, gratuito e opção de suporte pago 24x7 </li>
+                            <li>Auxílio e monitoramento da rede do cliente</li>
+                            <li>Presença Nacional</li>
+                            <li>Disponibilidade de estoque local</li>
+                            <li>Facilidade no pagamento dos produtos</li>
+                            <li>Produtos com tecnologia de ponta para a melhor experiência do usuário final</li>
+                            <li>Solução Fim-a-fim para<br> o provedor de internet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="wdc" style="background: url(<?php bloginfo('template_url'); ?>/img/bg-wdc.jpg) no-repeat center top/cover">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl7 valign-wrapper">
+                        <div>
+                            <h2>CONHEÇA O MODELO DE NEGÓCIO IDEAL, ALUGUE TODA TECNOLOGIA QUE PRECISA.</h2>
+                            <h4>O MUNDO MUDOU, NÓS TAMBÉM.</h4>
+                            <p>O único distribuidor que possui o modelo de negócio ideal para você. <br>Direto conosco, <strong> As A Service</strong>.</p>
+                            <p>A WDC NETWORKS desenvolveu em 2013, uma nova maneira de ofertar tecnologia de forma simples e descomplicada. Permitindo que as empresas possam investir na melhor tecnologia pagando uma mensalidade, ao invés de ter que investir de uma só vez. Nós transformamos o seu CAPEX em OPEX, em um formato que permite desfrutar de todos os benefícios fiscais de uma operação de arrendamento mercantil. </p>
+                        </div>
+                    </div>
+                    <div class="col xl5 vantagens valign-wrapper">
+                        <div class="div">
+                            <h2>VANTAGENS:</h2>
+                            <ul>
+                                <li><h4>RENOVAÇÃO TECNOLÓGICA</h4></li>
+                                <li><h4>MAIOR LUCRATIVIDADE<br> - FLUXO DE CAIXA SAUDÁVEL</h4></li>
+                                <li><h4>IMPOSTOS REDUZIDOS</h4></li>
+                                <li><h4>FLEXIBILIDADE NAS PARCELAS<br> - 36, 48 OU 60 MESES</h4></li>
+                                <li><h4>NÃO PREJUDICA SEU EBITIDA<br> - CAPEX SE TORNA OPEX</h4></li>
+                            </ul>
+                            <a href="#" class="more">SAIBA MAIS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col xl3">
+                        <img width="126" src="<?php bloginfo('template_url'); ?>/img/wdc-v.png" alt="WDC Networks">
+                    </div>
+                    <div class="col xl3">
+
+                    </div>
+                    <div class="col xl6">
+
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Modal Structure -->
+    <div class="modal-video">
+        <div class="content">
+            <a class="close">X</a>
+            <div class="modal-content">
+                <iframe src="" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/vendor/owlcarousel/owl.carousel.min.js"></script>
     <script>
         $(document).ready( () => {
             $('.products .carousel').carousel()
-            $('.products .next').on("click", () => {
-                $(".carousel").carousel("next");
+            $('.products .next').on('click', () => {
+                $('.products .carousel').carousel('next')
             })
-            $(".products .prev").on("click", () => {
-                $(".carousel").carousel("prev");
+            $('.products .prev').on('click', () => {
+                $('.products .carousel').carousel('prev')
             })
-            $('.faq').carousel({
-                fullWidth: true
+
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:0,
+                dots: false,
+                navText: [''],
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:2,
+                    },
+                    600:{
+                        items:2,
+                    },
+                    1000:{
+                        items:4,
+                        nav:true,
+                    }
+                }
             })
+            // $('.faq').carousel({
+            //     fullWidth: true
+            // })
             $('.sidenav').sidenav()
             $('.parallax').parallax()
+            $('.collapsible').collapsible()
+
+            //Modal
+            const modalButtons = document.querySelectorAll('.modal-button')
+            const modalOverlay = document.querySelector('.modal-video')
+
+            for(let modalButton of modalButtons) {
+                const id = modalButton.getAttribute('id')
+                modalButton.addEventListener('click', (event) => {
+                    modalOverlay.classList.add('active')
+                    modalOverlay.querySelector('iframe').src = `https://www.youtube.com/embed/${id}`
+                })
+            }
+            document.querySelector('.close').addEventListener('click', function() {
+                modalOverlay.classList.remove('active')
+                modalOverlay.querySelector('iframe').src = ''
+            })
         });
     </script>
     <?php wp_footer(); ?>

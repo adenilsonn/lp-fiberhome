@@ -77,6 +77,16 @@ body {
     font-weight: 300;
     background: #ededed;
 }
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+strong {
+    font-weight: 900;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -260,6 +270,9 @@ main .title span {
     color: var(--color-laranja);
     font-weight: 300;
 }
+main .title strong {
+    font-weight: 900;
+}
 
 main .vision {
     height: 600px;
@@ -422,6 +435,9 @@ main .support .title-section {
     text-align: center;
     padding: 20px 0;
 }
+main .support .valign-wrapper {
+    height: 600px;
+}
 main .support .title-section h2 {
     font-weight: 900;
     color: var(--color-azul);
@@ -452,19 +468,38 @@ main .support .container {
     height: 100%;
 }
 main .support ul {
-    margin: 60px 0 0;
+    margin: 100px 0 20px;
+    border: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 main .support ul li {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+    max-width: 434px;
 }
-main .support ul li a {
+main .support ul li .collapsible-body {
+    padding: 8px 0 0;
+    color: #fff;
+    border: none;
+    font-size: 14px;
+    line-height: 20px;
+}
+main .support ul li .collapsible-header {
     color: #fff;
     text-transform: uppercase;
     display: inline-block;
-    padding-right: 50px;
+    padding: 0 50px 0 0;
     position: relative;
+    background: none;
+    border: none;
 }
-main .support ul li a:before {
+main .support ul.faqc {
+    margin: 0;
+}
+main .support ul.faqc li .collapsible-header {
+    font-size: 15px;
+}
+main .support ul li .collapsible-header:before {
     content: '';
     background: url(../img/arrow-support.png) center center no-repeat;
     background-size: 100%;
@@ -473,6 +508,32 @@ main .support ul li a:before {
     position: absolute;
     right: 0;
 }
+main .support ul li p {
+    /*opacity: 0;
+    visibility: hidden;*/
+    color: #fff;
+    background-color: var(--color-laranja);
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+main .title-faq {
+    margin-bottom: 30px;
+}
+main .title-faq img {
+    float: left;
+}
+main .title-faq h2 {
+    font-size: 20px;
+    color: var(--color-laranja);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin: 17px 0 0 13px;
+    display: inline-block;
+}
+
 main .faq {
     min-height: 300px;
     width: 475px;
@@ -514,9 +575,242 @@ main .faq .faq-item p {
 main .faq .faq-item img {
     width: 56px;
 }
+main .vision.videos .box-list .box {
+    padding: 37px 13px 20px;
+    opacity: 1 !important;
+}
+main .vision.videos .box-list .box {
+    cursor: pointer;
+    width: 100%;
+    display: block;
+}
+main .vision.videos .box-list .box .ico {
+    text-align: center;
+}
+main .vision.videos .box-list .box .ico img {
+    width: 40px;
+    margin: 7px auto 0;
+    display: block;
+    transition: transform .3s ease-out, background-color 0.3s ease-out, -webkit-filter 0.5s ease-out;
+}
+main .vision.videos  .box-list .box:hover img {
+    filter: invert(0);
+    transform: scale(1.2);
+}
+main .vision.videos .box-list .box:hover .ico:before {
+    transform: scale(1.4) translate(-50%,-50%);
+    background-color: var(--color-azul);
+}
 .carousel.carousel-slider .carousel-item {
     min-height: unset;
 }
+
+main .vision.videos .valign-wrapper > div {
+    width: 100%;
+}
+main .vision.videos .box-list {
+    width: 100%;
+    height: 200px !important;
+    display: block;
+    grid-template-columns: none;
+    border-top: none;
+    max-width: 750px;
+}
+
+.owl-carousel .owl-nav button.owl-prev,.owl-carousel .owl-nav button.owl-prev:hover {
+    background: url('../img/arrow-left.png') center center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    margin-right: 25px;
+}
+.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-next:hover {
+    background: url('../img/arrow-right.png') center center no-repeat;
+    width: 40px;
+    height: 40px;
+    background-size: 100%;
+    margin-left: 25px;
+}
+.owl-theme .owl-nav {
+    margin-top: 30px;
+}
+
+
+main .solucoes {
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+    text-align: right;
+    text-transform: uppercase;
+    color: #fff;
+}
+main .solucoes h2 {
+    font-size: 40px;
+    color: var(--color-azul);
+    margin-top: 100px;
+}
+main .solucoes h2 strong {
+    font-weight: 900;
+}
+main .solucoes h2 span {
+    display: block;
+    font-weight: 900;
+    color: #fff;
+}
+main .solucoes .bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-laranja);
+    top: 0;
+    left: 40%;
+    transform: skewX(45deg);
+}
+main .solucoes .container {
+    position: relative;
+    z-index: 1;
+}
+main .solucoes ul {
+    margin: 0;
+    max-width: 500px;
+    float: right;
+}
+main .solucoes ul li {
+    line-height: 28px;
+    margin-bottom: 20px;
+    list-style: inside;
+}
+
+main .wdc {
+    position: relative;
+    height: 800px;
+    border-top: 5px solid var(--color-azul-claro);
+}
+
+main .wdc h2 {
+    font-size: 40px;
+    color: var(--color-azul-claro);
+    font-weight: 900;
+}
+main .wdc h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 900;
+}
+
+main .wdc p {
+    color: #fff;
+}
+
+main .wdc .valign-wrapper {
+    height: 795px;
+}
+main .wdc .row {
+    margin-bottom: 0;
+}
+
+main .wdc .vantagens div {
+    margin: 0 auto;
+}
+main .wdc .vantagens ul {
+    position: relative;
+}
+main .wdc .vantagens ul li {
+    position: relative;
+    padding-left: 40px;
+}
+main .wdc .vantagens ul li::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url('../img/bullet.png') center center no-repeat;
+    background-size: 100%;
+    left: 0;
+}
+main .wdc .vantagens h2 {
+    font-size: 25px;
+    padding-left: 40px;
+}
+main .wdc .vantagens ul:before {
+    content: '';
+    background: url(../img/marca.png) center center no-repeat;
+    width: 475px;
+    height: 309px;
+    background-size: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+main .wdc .vantagens a {
+    color: var(--color-azul-claro);
+    display: block;
+    border: 1px solid var(--color-azul-claro);
+    max-width: 87%;
+    margin: 51px 0 0 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 6px 0;
+}
+main .wdc .vantagens a:hover {
+    background-color: var(--color-azul-claro);
+    color: #fff;
+}
+
+
+main .contact {
+    padding: 110px 0;
+    background-color: #000;
+    border-top: 5px solid var(--color-azul-claro);
+}
+
+/* Modal */
+
+.modal-video {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+.modal-video.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-video .content {
+    background-color: #fff;
+    width: 90%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+    max-width: 1000px;
+    max-height: 579px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.modal-video .close {
+    color: #000;
+    position: absolute;
+    right: 9px;
+    top: 3px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+iframe {
+    width: 94%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    left: 3%;
+}
+
 @media only screen and (min-width: 993px) {
     .container {
         width: 94%;
