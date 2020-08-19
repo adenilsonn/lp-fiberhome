@@ -44,7 +44,7 @@ add_action('init', 'my_script');
 
 function custom_login_logo() {
      echo '<style type="text/css">
-         .login h1 a { background-image:url("'.get_stylesheet_directory_uri().'/img/espaco-niyama.png") !important; background-size: 237px 176px; width: 237px; height:176px; background-position: 0px 0px;}
+         .login h1 a { background-image:url("'.get_stylesheet_directory_uri().'/img/wdc-adm.png") !important; background-size: 207px 58px; width: 207px; height:58px; background-position: 0px 0px;}
      </style>';
 }
 add_action('login_head', 'custom_login_logo');
@@ -137,12 +137,17 @@ function add_slug_body_class( $classes ) {
 // tamanho de imagens personalizadas
 
 if ( function_exists( 'add_image_size' ) ) {
-	//add_image_size( 'carrossel', 1920, 740, true);
+	add_image_size( 'parallax', 1920, 800, true);
+	add_image_size( 'lap', 640, 540, true);
+	add_image_size( 'icone', 140, 140, true);
+	add_image_size( 'solucoes', 313, 236, true);
+	add_image_size( 'man', 330, 583, true);
+	add_image_size( 'lap1', 441, 481, true);
 }
 
 /* Options Tema */
 
-if( function_exists('acf_add_options_page') ) {
+/*if( function_exists('acf_add_options_page') ) {
 
     acf_add_options_page(array(
         'page_title'    => 'Conteúdos Adicionais',
@@ -152,7 +157,7 @@ if( function_exists('acf_add_options_page') ) {
         'redirect'  => false
     ));
 
-}
+}*/
 
 
 /*function edit_admin_menus() {
@@ -912,3 +917,8 @@ function clean($string) {
     return str_replace(["-", "–"], '', $string);
     // Removes special chars.
  }
+
+
+ // API
+
+ require_once TEMPLATEPATH . '/api/api.php';

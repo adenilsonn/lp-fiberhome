@@ -322,6 +322,7 @@ main .vision .box-list .box {
     background-color: #fff;
     text-align: center;
     padding: 20px 13px;
+    display: block;
 }
 main .vision .box-list .box:hover {
     border-top: 3px solid var(--color-laranja);
