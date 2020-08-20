@@ -26,3 +26,4 @@ node_modules/
 #my files
 !html
 !db
+!gz

@@ -921,4 +921,4 @@ function clean($string) {
 
  // API
 
- require_once TEMPLATEPATH . '/api/api.php';
+//require_once TEMPLATEPATH . '/api/api.php';
