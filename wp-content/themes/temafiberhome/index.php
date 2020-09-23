@@ -48,6 +48,7 @@
                 </div>
             </div>
         </section>
+         <?php if(get_field('imagem_fundo_visao_setor')) : ?>
         <section class="vision parallax-container scroll-to-block" data-id="visao-do-setor">
             <div class="parallax">
                 <?php
@@ -92,6 +93,7 @@
                 </div>
             </div>
         </section>
+        <?php endif; ?>
         <section class="products scroll-to-block" data-id="solucoes">
             <div class="container">
                 <h2 class="title center-align">
@@ -278,9 +280,11 @@
                     <div class="col xl4">
                         <h2>CONTATO</h2>
                         <div class="infos">
+                            <?php if(get_field('telefone_fiberhome') && get_field('email_fiberhome')) : ?>
                             <strong>FIBERHOME</strong><br>
                             Telefone: <span>11</span> <strong><?php the_field('telefone_fiberhome'); ?></strong><br>
                             Email: <a href="mailto:<?php the_field('email_fiberhome'); ?>" target="_blank" rel="noopener noreferrer"><strong><?php the_field('email_fiberhome'); ?></strong></a>
+                            <?php endif; ?>
                         </div>
                         <div class="infos">
                             <strong>WDC</strong><br>

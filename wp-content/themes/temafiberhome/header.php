@@ -11,6 +11,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/style.css">
     <?php wp_head(); ?>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-32191804-11"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-32191804-11');
+</script>
 </head>
 
 <body>
@@ -28,9 +37,9 @@
                         <li class="nav-item">
                             <a class="nav-link scroll-to-link" href="#institucional">INSTITUCIONAL</a>
                         </li>
-                        <li class="nav-item">
+                        <?php /*<li class="nav-item">
                             <a class="nav-link scroll-to-link" href="#visao-do-setor">VISÃO DO SETOR</a>
-                        </li>
+                        </li>*/ ?>
                         <li class="nav-item">
                             <a class="nav-link scroll-to-link" href="#solucoes">SOLUÇÕES</a>
                         </li>

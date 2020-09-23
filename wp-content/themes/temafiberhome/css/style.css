@@ -899,7 +899,29 @@ iframe {
 div#formulario-lp-fiberhome-2-5ed0e2219684ad2119b2 #rdstation-bricks-embeddable-form-bricks-component-JxExJH2bVQwls9Qfkzfamw p span {
     color: #fff !important;
 }
-
+div#rd-text-k1td3sed {
+    margin-bottom: 0 !important;
+}
+#rd-text-k1td3sed h5 strong {
+    background: none !important;
+    color: #fff !important;
+    text-transform: uppercase;
+    font-size: 29px !important;
+    margin-bottom: 0;
+}
+#rd-text-k1td3sed h5 {
+    color: #fff;
+}
+div#rd-text-keini1te p span {
+    background: none !important;
+}
+#rd-text-keimdwjb p span {
+    background: none !important;
+    color: #fff !important;
+}
+#rd-form-joq3m2m5i .bricks-form__static a, #rd-form-joq3m2m5i p.bricks-form__static {
+    color: #fff !important;
+}
 .sidenav {
     background-color: var(--color-azul);
     padding-top: 16px;
